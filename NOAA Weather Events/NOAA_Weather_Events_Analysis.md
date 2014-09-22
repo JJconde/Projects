@@ -218,20 +218,20 @@ The plot for each category.
 eventPlot(injury_Summary, y_column=2, title="Top 5 Event Types by Injuries", ylabel="Total Injuries (in Hundreds)")
 ```
 
-![plot of chunk unnamed-chunk-7](./Personal_Activity_Monitoring_Device_files/figure-html/unnamed-chunk-71.png) 
+![plot of chunk unnamed-chunk-7](./NOAA_Weather_Events_Analysis_files/figure-html/unnamed-chunk-71.png) 
 
 ```r
 # Fatality Plot
 eventPlot(fatality_Summary, y_column=3, title="Top 5 Event Types by Fatalities", ylabel="Total Fatalities (in Hundreds)")
 ```
 
-![plot of chunk unnamed-chunk-7](./Personal_Activity_Monitoring_Device_files/figure-html/unnamed-chunk-72.png) 
+![plot of chunk unnamed-chunk-7](./NOAA_Weather_Events_Analysis_files/figure-html/unnamed-chunk-72.png) 
 
 ```r
 # Economic Costs Plot
 eventPlot(dmg_Summary, y_column=4, title="Top 5 Event Types by Economic Costs", ylabel="Total Economic Costs (in Billions $)")
 ```
 
-![plot of chunk unnamed-chunk-7](./Personal_Activity_Monitoring_Device_files/figure-html/unnamed-chunk-73.png) 
+![plot of chunk unnamed-chunk-7](./NOAA_Weather_Events_Analysis_files/figure-html/unnamed-chunk-73.png) 
 
 ===
