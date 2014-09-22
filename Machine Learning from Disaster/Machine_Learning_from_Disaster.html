@@ -77,7 +77,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
     Cabin           Cabin
     Embarked        Port of Embarkation
                     (C = Cherbourg; Q = Queenstown; S = Southampton)</code></pre>
-<p>For more details on this challenge, see <a href="https://www.kaggle.com/c/titanic-gettingStarted">https://www.kaggle.com/c/titanic-gettingStarted</a>.</p>
+<p>For more details on this challenge, see <a href="https://www.kaggle.com/c/titanic-gettingStarted" class="uri">https://www.kaggle.com/c/titanic-gettingStarted</a>.</p>
 <p><strong>————————————————————————————————————————–</strong></p>
 <p>As for my overall analysis. I will be predicting which passengers survived based on the following:</p>
 <blockquote>
@@ -200,27 +200,27 @@ initPred &lt;- titanicTest(titanic, type=1, split=1)</code></pre>
 ## 
 ##           Reference
 ## Prediction   0   1
-##          0 185  46
-##          1  30  95
-##                                        
-##                Accuracy : 0.787        
-##                  95% CI : (0.74, 0.828)
-##     No Information Rate : 0.604        
-##     P-Value [Acc &gt; NIR] : 1.65e-13     
-##                                        
-##                   Kappa : 0.545        
-##  Mcnemar's Test P-Value : 0.0853       
-##                                        
-##             Sensitivity : 0.860        
-##             Specificity : 0.674        
-##          Pos Pred Value : 0.801        
-##          Neg Pred Value : 0.760        
-##              Prevalence : 0.604        
-##          Detection Rate : 0.520        
-##    Detection Prevalence : 0.649        
-##       Balanced Accuracy : 0.767        
-##                                        
-##        'Positive' Class : 0            
+##          0 194  43
+##          1  42  77
+##                                         
+##                Accuracy : 0.761         
+##                  95% CI : (0.713, 0.805)
+##     No Information Rate : 0.663         
+##     P-Value [Acc &gt; NIR] : 3.54e-05      
+##                                         
+##                   Kappa : 0.465         
+##  Mcnemar's Test P-Value : 1             
+##                                         
+##             Sensitivity : 0.822         
+##             Specificity : 0.642         
+##          Pos Pred Value : 0.819         
+##          Neg Pred Value : 0.647         
+##              Prevalence : 0.663         
+##          Detection Rate : 0.545         
+##    Detection Prevalence : 0.666         
+##       Balanced Accuracy : 0.732         
+##                                         
+##        'Positive' Class : 0             
 ## </code></pre>
 <p>My <em>initial prediction</em> for Random Forest.</p>
 <pre class="r"><code># Check my initial predictions for random forest
@@ -232,25 +232,25 @@ initPred &lt;- titanicTest(titanic, split=1)</code></pre>
 ## 
 ##           Reference
 ## Prediction   0   1
-##          0 192  50
-##          1  15  99
+##          0 183  39
+##          1  31 103
 ##                                         
-##                Accuracy : 0.817         
-##                  95% CI : (0.773, 0.856)
-##     No Information Rate : 0.581         
-##     P-Value [Acc &gt; NIR] : &lt; 2e-16       
+##                Accuracy : 0.803         
+##                  95% CI : (0.758, 0.843)
+##     No Information Rate : 0.601         
+##     P-Value [Acc &gt; NIR] : 2.53e-16      
 ##                                         
-##                   Kappa : 0.612         
-##  Mcnemar's Test P-Value : 2.47e-05      
+##                   Kappa : 0.586         
+##  Mcnemar's Test P-Value : 0.403         
 ##                                         
-##             Sensitivity : 0.928         
-##             Specificity : 0.664         
-##          Pos Pred Value : 0.793         
-##          Neg Pred Value : 0.868         
-##              Prevalence : 0.581         
-##          Detection Rate : 0.539         
-##    Detection Prevalence : 0.680         
-##       Balanced Accuracy : 0.796         
+##             Sensitivity : 0.855         
+##             Specificity : 0.725         
+##          Pos Pred Value : 0.824         
+##          Neg Pred Value : 0.769         
+##              Prevalence : 0.601         
+##          Detection Rate : 0.514         
+##    Detection Prevalence : 0.624         
+##       Balanced Accuracy : 0.790         
 ##                                         
 ##        'Positive' Class : 0             
 ## </code></pre>
